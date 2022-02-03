@@ -14,6 +14,8 @@ jobs:
             python-version: 3.9
             cache: pip
 
+      - name: Check versions
+        run: pip freeze
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Check versions
